@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/services"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Services" />
+        <item
+            android:id="@+id/gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/more"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Offers/Discounts" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/followus"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Follow Us" />
+            <item
+                android:id="@+id/contactus"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>
