@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".more" />
+        <activity android:name=".SpacePhotoActivity" />
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
