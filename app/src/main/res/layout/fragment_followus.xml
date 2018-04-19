@@ -7,31 +7,18 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
 
                 <TextView
                     android:layout_width="match_parent"
@@ -40,37 +27,68 @@
                     android:textColor="#000000"
                     android:textSize="20sp"/>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50sp">
                 <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
                     android:background="@drawable/facebook"
+                    android:layout_weight="0.3"
                     android:id="@+id/facebook"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
 
                 <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
                     android:background="@drawable/twitter"
+                    android:layout_weight="0.3"
+                    android:layout_marginStart="30sp"
                     android:id="@+id/twitter"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
 
                 <Button
                     android:layout_width="60sp"
                     android:layout_height="60sp"
                     android:background="@drawable/instagram"
+                    android:layout_weight="0.3"
+                    android:layout_marginStart="30sp"
                     android:id="@+id/instagram"/>
+                </LinearLayout>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send us a Mail"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/sendEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0000ff"
+                    android:text="Compose Email"/>
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
